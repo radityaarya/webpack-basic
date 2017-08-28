@@ -65,9 +65,25 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const web  = __webpack_require__(1);
+const pack = __webpack_require__(2);
+
+console.log(`HELLO ${web}`);
+console.log(`HI ${pack}`);
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-console.log('HELLO WEBPACK!');
+module.exports="WEB";
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports="PACK";
 
 /***/ })
 /******/ ]);
